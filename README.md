@@ -2,13 +2,43 @@
 
 ### Google Drive:
 
-* [Slides jour 1]
-* [Liens jour 1 (documentation)]
-* [Slides jour 2]
-* [Liens jour 2 (documentation)]
+Routing:
 
-[Slides jour 1]: <https://docs.google.com/presentation/d/152_9APJbzUOJKyF6ot-R9F-mF4kwyjJN2qJPaf6bGBU/edit?usp=sharing>
-[Liens jour 1 (documentation)]: <https://docs.google.com/document/d/149laUVXX9giGu3cj1QBEPOjOjsM77JTvX8sZMzGdeQk/edit?usp=sharing>
 
-[Slides jour 2]: <https://docs.google.com/presentation/d/1BJ0oEKzST5rPTOydWnyUrdeesh5PN1aDlAIIAtCGgw0/edit?usp=sharing>
-[Liens jour 2 (documentation)]: <https://docs.google.com/document/d/1ZG63CTtwZ7uadLrQmjz-Hj-JnFIsZQwPf80_0xRhFYA/edit?usp=sharing>
+Router:
+https://angular.io/docs/ts/latest/api/router/index/Router-class.html
+
+CanActivate
+https://angular.io/docs/ts/latest/api/router/index/CanActivate-interface.html
+
+
+Child route
+https://angular-2-training-book.rangle.io/handout/routing/child_routes.html
+
+Observers:
+https://github.com/ReactiveX/rxjs/blob/master/doc/observer.md
+
+Http Request:
+https://angular.io/docs/ts/latest/api/http/index/Http-class.html
+
+Http Request options
+https://angular.io/docs/ts/latest/api/http/index/RequestOptions-class.html
+
+Response:
+https://angular.io/docs/ts/latest/api/http/index/Response-class.html
+
+
+SocketIO:
+http://socket.io/
+
+Rest:
+https://fr.wikipedia.org/wiki/Representational_state_transfer
+
+SystemJS:
+https://github.com/systemjs/systemjs
+WebPackJS:
+https://webpack.github.io/
+https://angular.io/docs/ts/latest/guide/webpack.html
+Gulp & Webpack:
+https://webpack.github.io/docs/usage-with-gulp.html
+
