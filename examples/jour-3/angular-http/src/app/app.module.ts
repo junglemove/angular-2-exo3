@@ -9,6 +9,7 @@ import { CreateProductComponent } from './components/create-product/create-produ
 import { Restaurant } from './models/restaurant';
 import {Store} from './models/store';
 import { ProductListComponent } from './components/product-list/product-list.component'
+import { ContainerService } from './services/container.service'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
     HttpModule,
     AppRoutingModule
   ],
-  providers: [Store, Restaurant],
+  providers: [Store, Restaurant, ContainerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
