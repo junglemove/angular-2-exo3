@@ -15,8 +15,9 @@ export class Store {
 	public readonly name: string = 'Amazing Store'
 
 	constructor() {
-		/*this.products.push(new Product("AA",123,"AA"));
-		this.products.push(new Product("BB",123,"BB"));*/
+		this.products.push(new Product("AA",123,"AA"));
+		this.products.push(new Product("BB",123,"BB"));
+		this.products.push(new Product("CC",123,"CC"));
 
 	}
 
