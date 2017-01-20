@@ -21,7 +21,7 @@ import { AuthCheckerService } from './auth-checker.service'
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([{
+    RouterModule.forRoot([{ // ROUTE definitions
     	path: '', component: ListComponent
     },{
       path: 'new', component: CreateComponent
