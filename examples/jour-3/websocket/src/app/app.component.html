@@ -2,7 +2,8 @@
 	{{title}}
 </h1>
 <div *ngFor="let message of messages">
-	Message from {{message.sender}}: <span [innerHTML]="message.message"> </span> <!-- {{ message.message }} -->
+	Message from {{message.sender}}: <span [innerHTML]="message.message"> </span> 
+	<!-- {{ message.message }} innerHTML is a directive that allows to interpret the html -->
 </div>
 <br>
 <label>Sender</label>

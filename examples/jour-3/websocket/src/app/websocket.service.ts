@@ -2,7 +2,7 @@ import {
 	Injectable
 } from '@angular/core';
 import { Observable } from 'rxjs/Observable'
-declare let io
+declare let io // can be used for jQuery $.
 
 @Injectable()
 export class WebsocketService {

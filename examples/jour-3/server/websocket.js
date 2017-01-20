@@ -1,6 +1,6 @@
 let app = require('express')();
 let http = require('http').Server(app);
-let io = require('socket.io')(http, { origins: '*:*'})
+let io = require('socket.io')(http, { origins: '*:*'}) // cross origins filter
 let _ = require('lodash')
 
 let clients = []
