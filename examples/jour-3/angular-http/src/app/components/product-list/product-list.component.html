@@ -1,0 +1,24 @@
+<h1>
+	PRODUCT LIST
+</h1>
+<table class="table table-bordered">
+	<thead>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Type</th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let product of store.products" (click)="elemClicked(product)" [ngClass]="getProductClass(product)">
+			<td>{{ product.id }}</td>
+			<td>{{ product.name }}</td>
+			<td>{{ product.price }}</td>
+			<td>{{ product.type }}</td>
+		</tr>
+	</tbody>
+</table>
+<button class="btn btn-info" (click)="clear()">Clear selection</button>
+<button class="btn btn-danger"(click)="remove()">Remove selection</button>
+<button class="btn btn-default" routerLink="/create">Return</button>
+
+

@@ -1,0 +1,13 @@
+<h1>
+	CREATE PRODUCT
+</h1>
+<div>
+  Name: <input #name>
+  <br>
+  Type: <input #type>
+  <br>
+  Price: <input #price>
+	<br>
+  <button (click)="onClick(name.value, type.value, price.value)">ADD PRODUCT</button>
+  <button routerLink="/products">PRODUCT LIST</button>
+</div>
