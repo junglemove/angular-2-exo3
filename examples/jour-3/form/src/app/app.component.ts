@@ -10,7 +10,7 @@ export class AppComponent {
 
   constructor(fb: FormBuilder){   // FormBuilder injectable
     this.complexForm = fb.group({
-      'firstName' : [null, Validators.required],
+      'firstName' : [null, Validators.required], // inpt value init to null (first parameter)
       'lastName': [null,  Validators.compose([Validators.required, Validators.minLength(5), Validators.maxLength(10)])],
       'gender' : [null, Validators.required],
       'hiking' : [false],
