@@ -11,10 +11,14 @@ import {
 
 @Injectable()
 export class Store {
-	public readonly products: IProduct[] = []
+	public readonly products: IProduct[] = [];
 	public readonly name: string = 'Amazing Store'
 
-	constructor() {}
+	constructor() {
+		/*this.products.push(new Product("AA",123,"AA"));
+		this.products.push(new Product("BB",123,"BB"));*/
+
+	}
 
 	addProducts(products: IProduct[] = []) {
 		//this.products = this.products.concat(products)
