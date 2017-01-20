@@ -29,7 +29,7 @@ import { AuthCheckerService } from './auth-checker.service'
       path: 'admin/:data', component: AdminComponent, canActivate: [AuthCheckerService]
     }])
   ],
-  providers: [AuthCheckerService],
+  providers: [AuthCheckerService], // To use services(@Injectable) you are forced to declare it in the app.module[providers] 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
