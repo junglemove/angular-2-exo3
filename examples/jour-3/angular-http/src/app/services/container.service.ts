@@ -38,4 +38,17 @@ export class ContainerService {
 			console.log('error', error)
 		})
 	}
+
+	reset(onSuccess = null, onError = null) {
+		return this.client.delete(this.url).subscribe(result => {
+			console.log(result)
+			if (onSuccess)
+				onSuccess(result)
+		},
+		error => {
+			if (onError)
+				onError(error)
+			console.log('error', error)
+		})
+	}
 }

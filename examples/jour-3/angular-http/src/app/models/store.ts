@@ -21,6 +21,10 @@ export class Store {
 
 	}
 
+	reset(){
+		this.products.splice(0,this.products.length);
+	}
+
 	addProducts(products: IProduct[] = []) {
 		//this.products = this.products.concat(products)
 		for (var elem of products) {

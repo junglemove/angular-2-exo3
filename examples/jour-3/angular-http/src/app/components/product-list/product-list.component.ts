@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '../../models/store';
 import { Product } from '../../models/product';
 import { Order } from '../../models/order';
+import { ContainerService } from '../../services/container.service'
+
 import * as _ from "lodash";
 
 @Component({
@@ -13,7 +15,7 @@ export class ProductListComponent implements OnInit {
 
 	selected: Product[] = []
 
-	constructor(private store: Store) {
+	constructor(private store: Store,  private controller:ContainerService) {
 	}
 
 	ngOnInit() {
@@ -47,7 +49,14 @@ export class ProductListComponent implements OnInit {
 	}
 
 	clear() {
-		this.selected = []
+		this.selected = [];
+		this.controller.reset();
+	}
+
+	removeAll() {
+		this.selected = [];
+		this.store.reset();
+		this.controller.reset();
 	}
 
 	remove() {

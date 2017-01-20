@@ -42,6 +42,13 @@ module.exports.init = function (app) {
 		return res.json({ error: 'Item not found' })
 	})
 
+	app.delete('/item', function (req, res) {
+		console.log('remove all items')
+		items = [];
+
+		return res.json({ success: 'Item reseted' })
+	})
+
 	app.put('/item/:idItem', function (req, res) {
 		console.log('update item', req.params.idItem)
 		var item = items[req.params.idItem]
