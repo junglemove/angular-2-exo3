@@ -14,7 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms'
     BrowserModule,
     FormsModule,
     HttpModule,
-    ReactiveFormsModule
+    ReactiveFormsModule // required for NgModule forms init
   ],
   providers: [],
   bootstrap: [AppComponent]
