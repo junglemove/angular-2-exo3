@@ -6,9 +6,9 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   templateUrl : 'app.component.html'
 })
 export class AppComponent {
-  complexForm : FormGroup;
+  complexForm : FormGroup;  // 
 
-  constructor(fb: FormBuilder){
+  constructor(fb: FormBuilder){   // FormBuilder injectable
     this.complexForm = fb.group({
       'firstName' : [null, Validators.required],
       'lastName': [null,  Validators.compose([Validators.required, Validators.minLength(5), Validators.maxLength(10)])],
@@ -24,6 +24,6 @@ export class AppComponent {
   }
 
   submitForm(value: any){
-    console.log(value)
+    console.log(value) // <=> this.complexForm.value
   }
 }
